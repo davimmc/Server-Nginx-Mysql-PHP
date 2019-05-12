@@ -1,7 +1,7 @@
 nginx:
     image: tutum/nginx
     ports:
-        - ""80:80""
+        - "80:80"
     links:
         - phpfpm
     volumes:
@@ -13,7 +13,7 @@ nginx:
 phpfpm:
     image: php:fpm
     ports:
-        - ""9000:9000""
+        - "9000:9000"
     volumes:
         - ./html:/usr/share/nginx/html
 
